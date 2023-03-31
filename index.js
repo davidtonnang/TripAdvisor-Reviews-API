@@ -5,7 +5,7 @@ const list = document.querySelector(".list")
 // Change API to the correct link
 submit.addEventListener("click", () => {
   const input = document.querySelector('.input-text').value
-  const lang = document.querySelector('.input-lang').value
+  const lang = document.querySelector('.lang-text').value
   console.log(input)
   console.log(lang)
   fetch(`https://api.content.tripadvisor.com/api/v1/location/${input}/reviews?language=${lang}&key=87F1E8B704F148F4BC8839809A3CCB28`, {
