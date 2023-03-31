@@ -6,7 +6,7 @@ const list = document.querySelector(".list")
 submit.addEventListener("click", () => {
   fetch("https://api.content.tripadvisor.com/api/v1/location/1043070/reviews?language=nl&key=87F1E8B704F148F4BC8839809A3CCB28", {
     method: 'GET',
-    header: 'application/json'
+    headers: 'application/json'
   })
     .then((response) => response.json())
     .then((data) => {
