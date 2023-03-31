@@ -1,11 +1,11 @@
 const submit = document.querySelector(".submit-btn")
 const list = document.querySelector(".list")
 
-console.log(input)
 
 // Change API to the correct link
 submit.addEventListener("click", () => {
   const input = document.querySelector('.input-text').value
+  console.log(input)
   fetch(`https://api.content.tripadvisor.com/api/v1/location/${input}/reviews?language=nl&key=87F1E8B704F148F4BC8839809A3CCB28`, {
     method: 'GET',
     header: 'application/json'
