@@ -11,12 +11,12 @@ submit.addEventListener("click", () => {
     .then((response) => response.json())
     .then((data) => {
       console.log(data)
-      data.forEach((review) => {
+      
         const li = document.createElement("li")
         // Change name to the correct object
         li.textContent += review.title
         list.appendChild(li)
-      })
+      
     })
     .catch((error) => console.error(error))
 })
