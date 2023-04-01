@@ -25,6 +25,11 @@ p {
   color: #33e0a0;
 }
 
+span {
+  color: #33e0a0;
+  opacity: 0.7;
+}
+
 .list {
   list-style: none;
   margin: 40px 0 0;
