@@ -15,9 +15,9 @@ submit.addEventListener("click", () => {
   .then((response) => response.json())
   .then((data) => {
     console.log(data)
-    data.forEach((data) => {
+    data.text.forEach((review) => {
       const li = document.createElement("li");
-      li.textContent = data.title;
+      li.textContent = review.text;
       list.appendChild(li);
     });
     })
