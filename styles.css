@@ -31,6 +31,12 @@ p {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+  margin-top: 40px;
+  padding: 0;
+}
+
 .list li {
   background-color: #383838;
   border: 1px solid #33e0a0;
