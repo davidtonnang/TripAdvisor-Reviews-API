@@ -17,7 +17,8 @@ submit.addEventListener("click", () => {
     console.log(data)
     data.data.forEach((review) => {
       const li = document.createElement("li");
-      li.textContent = `${review.text} \n Rating: ${review.rating} \n Travel Date: ${review.travel_date}`;
+      li.textContent = review.text + "\nRating: " + review.rating + "\nTravel Date: " + review.travel_date;
+      
       list.appendChild(li);
     });
     })
