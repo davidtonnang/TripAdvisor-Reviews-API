@@ -15,11 +15,11 @@ submit.addEventListener("click", () => {
   .then((response) => response.json())
   .then((data) => {
     console.log(data)
-    data.text.forEach((review) => {
+    data.data.forEach((review) => {
       const li = document.createElement("li");
       li.textContent = review.text;
       list.appendChild(li);
     });
     })
     .catch((error) => console.error(error))
-})
+});
