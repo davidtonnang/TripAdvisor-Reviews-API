@@ -1,10 +1,14 @@
 /* styles.css */
 
+body {
+  background-color: #121212;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f7f7f7;
+  background-color: #121212;
   font-family: Arial, sans-serif;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -14,6 +18,11 @@ h1 {
   font-size: 36px;
   margin: 0 0 20px 0;
   text-align: center;
+  color: #33e0a0;
+}
+
+p {
+  color: #33e0a0;
 }
 
 .list {
@@ -32,7 +41,7 @@ h1 {
 }
 
 .submit-btn {
-  background-color: #4285f4;
+  background-color: #33e0a0;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -46,7 +55,7 @@ h1 {
 }
 
 .submit-btn:hover {
-  background-color: #3367d6;
+  background-color: #33e0a0;
 }
 
 .input-text {
@@ -69,4 +78,16 @@ h1 {
   margin-bottom: 10px;
   width: 100%;
   box-sizing: border-box;
+}
+
+.tripadvisor {
+  text-align: center;
+}
+
+.tripadvisorlogo {
+  height: 250px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
