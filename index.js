@@ -70,7 +70,7 @@ submit.addEventListener("click", () => {
       console.log(data)
       data.data.forEach((review) => {
         const li = document.createElement("li")
-        li.textContent = `${review.text} \n Rating: ${review.rating} \n Travel Date: ${review.travel_date}`
+        li.innerHTML = `${review.text} <br> Rating: ${review.rating} <br> Travel Date: ${review.travel_date}`;
         list.appendChild(li)
       })
     })
