@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Tripadvisor API</title>
 </head>
 
@@ -14,16 +15,46 @@
     <h1>Visit Halland Tourist Reviews</h1>
     <p>Enter ID</p>
     <input class="input-text" type="text">
-    <span>Example IDs: 1043070, 502004, 227515</span>
-    <p>Enter Language</p>
+    <span>Example IDs: 1043070, 1797229, 227515</span>
+    <h2>OR</h2>
+    <p>Select ID</p>
+    <div class="radio-group">
+      <label class="radio-label">
+        <input type="radio" name="id" value="1043070"><span class="radio-span">John's Place</span>
+      </label>
+      <label class="radio-label">
+        <input type="radio" name="id" value="1797229"><span class="radio-span">Ullared</span>
+      </label>
+      <label class="radio-label">
+        <input type="radio" name="id" value="227515"><span class="radio-span">Falkenberg Strandbag</span>
+      </label>
+    </div>
+    <p>Enter language</p>
     <input class="lang-text" type="text">
-    <span>Example Languages: sv, en, nl</span>
+    <span>Example languages: se, en, nl</span>
+    <h2>OR</h2>
+    <p>Select Language</p>
+    <div class="radio-group">
+      <label class="radio-label">
+        <input type="radio" name="language" value="se"><span class="radio-span">Swedish</span>
+      </label>
+      <label class="radio-label">
+        <input type="radio" name="language" value="en"><span class="radio-span">English</span>
+      </label>
+      <label class="radio-label">
+        <input type="radio" name="language" value="nl"><span class="radio-span">Dutch</span>
+      </label>
+    </div>
     <p class="tripadvisor">Review Content</p>
-    <img src="https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2020/01/31142253/Banner-image-26.jpg" alt="Tripadvisor logo" class="tripadvisorlogo">
-    <input class="submit-btn" type="submit" value="Get Reviews!"></input>
+    <img
+      src="https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2020/01/31142253/Banner-image-26.jpg"
+      alt="Tripadvisor logo" class="tripadvisorlogo">
+    <input class="submit-btn" type="submit" value="Get Reviews!">
     <ul class="list"></ul>
+    <div class="error">
+    </div>
   </div>
-    <script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

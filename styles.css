@@ -21,6 +21,13 @@ h1 {
   color: #33e0a0;
 }
 
+h2 {
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+  text-align: center;
+  color: #33e0a0;
+}
+
 p {
   color: #33e0a0;
 }
@@ -102,4 +109,90 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input {
+  outline: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+label span {
+  position: relative;
+  padding-left: 25px;
+  font-size: 18px;
+  color: #fff;
+}
+
+label span:before {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #33e0a0;
+}
+
+input[type="radio"]:checked + span:before {
+  content: "\2713";
+  font-size: 18px;
+  color: #121212;
+  text-align: center;
+  line-height: 16px;
+}
+
+.radio-label input[type="radio"] {
+  display: none;
+}
+
+.radio-label .radio-span {
+  display: inline-block;
+  background-color: #33e0a0;
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: #121212;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.radio-label input[type="radio"]:checked + .radio-span {
+  background-color: #121212;
+  border: 1px solid #33e0a0;
+  color: #33e0a0;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.radio-label {
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+.radio-span {
+  color: #33e0a0;
+  opacity: 1;
+}
+
+.error {
+  color: #33e0a0;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 36px;
 }
