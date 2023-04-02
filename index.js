@@ -76,3 +76,19 @@ submit.addEventListener("click", () => {
     })
     .catch((error) => console.error(error))
 })
+
+const radioButtons = document.querySelectorAll('input[type="radio"]');
+let prevSelected = null;
+
+radioButtons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    const selected = e.target;
+
+    if (selected === prevSelected) {
+      selected.checked = false;
+      prevSelected = null;
+    } else {
+      prevSelected = selected;
+    }
+  });
+});
